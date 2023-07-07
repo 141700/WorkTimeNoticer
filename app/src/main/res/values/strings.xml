@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+        <!ENTITY appname "WTN">
+        ]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="action_preferences">Preferences</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Учет рабочего времени</string>
+    <string name="second_fragment_label">Учет рабочего времени</string>
+
+    <string name="auth_way_radio_button_title">Способ идентификации</string>
+    <string name="auth_way_radio_button_bluetooth">Bluetooth</string>
+    <string name="auth_way_radio_button_wifi">Wi-Fi</string>
+    <string name="start">Отметиться</string>
+    <string name="view">Рабочее время</string>
+
+    <string name="previous">Назад</string>
+
+    <!-- Preference Titles -->
+    <string name="worker_settings_header">Сотрудник</string>
+    <string name="app_settings_header">Настройки сервера</string>
+
+    <!-- Employee Preferences -->
+    <string name="employee_name_title">ФИО Сотрудника</string>
+    <string name="min_name_length">5</string>
+    <string name="max_name_length">30</string>
+    <string name="wrong_name_warning">От 5 до 30 символов</string>
+
+    <!-- Server Preferences -->
+    <string name="server_url_title">URL</string>
+    <string name="server_url_default">http://192.168.11.20</string>
+    <string name="server_port_title">PORT</string>
+    <string name="server_port_default">8000</string>
+    <string name="server_get_points">/getpoints</string>
+    <string name="server_new_record">/new</string>
+
+    <!-- Keys for Preferences -->
+    <string name="local_db_last_update">local_db_last_update</string>
+    <string name="app_version">app_version</string>
+
+    <!-- Worktime Records Demonstrating -->
+    <string name="wtr_days_max">10</string>
+    <string name="no_one_wtr_found">Записей в локальной базе не найдено.</string>
+
+    <!-- Local DB Preferences and version -->
+    <string name="local_db_title">Приложение</string>
+    <string name="local_db_last_update_title">Обновление локальной базы</string>
+    <string name="app_version_title">Версия приложения</string>
+
+    <!-- Preferences keys -->
+    <string name="employee_name_key">employee_name</string>
+    <string name="server_key">server_url</string>
+    <string name="server_port_key">server_port</string>
+
+    <!-- Toast Preferences -->
+    <string name="toast_update_ok">ДАННЫЕ ОБНОВЛЕНЫ В ЛОКАЛЬНОЙ БАЗЕ</string>
+    <string name="toast_record_post_error">ОШИБКА СВЯЗИ С СЕРВЕРОМ</string>
+    <string name="toast_record_accepted">ДАННЫЕ ОТПРАВЛЕНЫ НА СЕРВЕР</string>
+
+    <!-- Notification Process Preferences -->
+    <string name="wrong_name">Имя сотрудника не задано или неверной длины.</string>
+    <string name="idservice_not_set">Метод идентификации не задан.</string>
+    <string name="service_is_off">%s выключен.</string>
+    <string name="no_known_device_found">Не найдено ни одного подходящего для идентификации устройства.</string>
+    <string name="idservice_complete">Сотрудник %s зарегистрирован в офисе \"%s\".</string>
+
+    <!-- Popup Windows Preferences -->
+    <string name="first_run_popup_text">Это первый запуск приложения.\n\n
+        Сейчас Вы будете перенаправлены на окно настроеек.\n\n
+        Пожалуйста, внесите свои ФИО.
+    </string>
+    <string name="permission_declined_popup_text">Лимит запросов исчерпан.\n\n
+        Установите необходимое разрешение в Системных Настройках:\n\n
+        Настройки -> Приложения -> &appname; -> Разрешения приложений.\n\n
+        Либо переустановите данное приложение.
+    </string>
+
+</resources>

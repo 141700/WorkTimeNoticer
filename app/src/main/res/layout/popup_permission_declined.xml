@@ -1,0 +1,53 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#BF000000">
+
+                <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/leftMargin"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.15"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/rightMargin"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.85"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/topMargin"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.1"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/bottomMargin"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.9"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="@+id/topMargin"
+                        app:layout_constraintStart_toEndOf="@id/leftMargin"
+                        app:layout_constraintEnd_toStartOf="@id/rightMargin"
+                        app:layout_constraintBottom_toBottomOf="@+id/bottomMargin"
+                        android:gravity="start"
+                        android:text="@string/permission_declined_popup_text"
+                        android:textColor="#fff"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
